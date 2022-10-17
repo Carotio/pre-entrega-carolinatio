@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--header--*/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 96px;
+}
+
+header img {
+    width: 120px;
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    display:inline-flex;
+}
+
+header nav ul li {
+    margin: 24px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #68696b;
+}
+
+header nav ul li a:hover {
+    color: #ffea00;
+}
+
+/*--main--*/
+/*-----hero-----*/
+.hero {
+    background-color: black;
+    background-image: url(../img/Doit.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vh - 114px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p {
+    color: #898a8b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 96px;
+}
+
+.hero p span {
+    color: #e1d335;
+}
+
+/*-----filosofia-----*/
+
+.filosofia {
+    border-bottom: #eee solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 180px 160px;
+}
+
+.filosofia h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #68696b;
+}
+
+.filosofia p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    color: #1a1b1f;
+}
+
+main section a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 25px 12px 25px;
+}
+
+main section a:hover:hover {
+    color: #ffea00;
+}
+
+/*-----proyectos-----*/
+
+.proyectos {
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 116px;
+    grid-template-areas:
+        "imagen imagen texto"
+        "texto2 imagen2 imagen2"
+    ;
+    object-fit: cover;
+}
+
+.primer-item {
+    grid-area: imagen;
+}
+
+.segundo-item {
+    grid-area: texto;
+}
+
+.tercer-item {
+    grid-area: texto2;
+}
+
+.cuarto-item {
+    grid-area: imagen2;
+}
+
+.proyectos div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.proyectos div h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: #68696b;
+}
+
+.proyectos div h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1a1b1f;
+}
+
+.proyectos div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #68696b;
+    margin: 24px 0;
+}
+
+/*-----concepto-----*/
+
+.concepto {
+    border-bottom: #eee solid 1px;
+    text-align: center;
+    padding: 120px 160px 80px 160px;
+}
+
+
+.concepto div h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #68696b;
+}
+
+.concepto div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    color: #1a1b1f;
+}
+
+.concepto div p span {
+    color: #ffea00;
+    font-style: italic;
+}
+
+/*-----servicios-----*/
+
+.servicios {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 64px 120px 64px;
+}
+
+.servicios div h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: medium;
+    font-weight: 500;
+    color: #1a1b1f;
+}
+
+.servicios div ul li {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #68696b;
+    padding: 24px 0;
+    transition: 1seg;
+}
+
+.servicios div ul li:hover {
+    transform: scale(1.1);
+}
+
+.servicios div h4:hover {
+    color: #ffea00;
+}
+
+.servicios div img {
+    transition: 1seg;
+}
+
+.servicios div img:hover {
+    transform: scale(1.1);
+}
+
+/*-----quienes somos-----*/
+
+.quienesSomos {
+    background-color: #eee;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 160px;
+}
+
+.quienesSomos div {
+    padding: 32px 8px;
+}
+
+.quienesSomos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: medium;
+    font-weight: 500;
+    color: #1a1b1f;
+    padding: 16px;
+
+}
+
+.quienesSomos p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    color: #68696b;
+}
+
+/* pages sobre nosotros */
+
+
+.concepto div h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: medium;
+    font-weight: 500;
+    color: #1a1b1f;
+    padding: 16px;
+}
+
+.filosofia div p {
+    padding: 35px 0 100px 0;
+}
+
+.filosofia div p span {
+    color: #ffea00;
+}
+
+/* pages servicios */
+
+.grid-contenedor div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-contenedor div img {
+    padding: 24px;
+    transition: 1seg;
+}
+
+.grid-contenedor div img:hover {
+    transform: scale(1.1);
+}
+
+.grid-contenedor div h2:hover {
+    color: #ffea00;
+}
+
+.grid-contenedor div p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #68696b;
+    text-align: center;
+}
+
+.grid-contenedor div h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color:#898a8b;
+}
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    column-gap: 32px;
+    grid-template-areas:
+        "ecologico conductual gestion"
+        "texto texto texto"
+        "intervencion emocional experiencias"
+    ;
+}
+
+.primer-espacio{
+    grid-area: ecologico;
+    padding: 80px 40px;
+}
+
+.segundo-espacio{
+    grid-area: conductual;
+    padding: 80px 40px;
+}
+
+.tercer-espacio{
+    grid-area: gestion;
+    padding: 80px 40px;
+}
+
+.cuarto-espacio{
+    grid-area: texto;
+    background-color: #ffef44;
+    height: 350px;
+}
+
+.quinto-espacio{
+    grid-area: intervencion;
+    padding: 80px 40px;
+}
+
+.sexto-espacio{
+    grid-area: emocional;
+    padding: 80px 40px;
+}
+
+.septimo-espacio{
+    grid-area: experiencias;
+    padding: 80px 40px;
+}
+
+.grid-contenedor div p span{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    color: #68696b;
+    padding: 180px 160px;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+}
+
+/* pages contacto */
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contacto div :nth-child(5) {
+    margin: 16px 0;
+}
+
+.contacto div textarea {
+    background-color: #898a8b13;
+}
+
+.contacto div h3 {
+    font-size: 14px;
+    font-style: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #68696b;
+}
+
+.contacto div p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1a1b1f;
+    text-align: center;
+}
+
+.contacto div iframe {
+    width: 100%;
+    height: 240px;
+}
+
+/*--foother--*/
+
+footer {
+    background-color: #1a1b1f;
+    background-position: center;
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: rgba(238, 238, 238, 0.769);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 8px;
+}
+
+footer div {
+    text-align: center;
+}
+
+/* media */
+
+@media screen and (max-width:1000px) {
+    .servicios div{
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .proyectos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imagen"
+            "texto"
+            "imagen2"
+            "texto2"
+    ;
+    }
+    header {
+        flex-direction: column;
+        height: 100%;
+    }
+    header nav ul{
+        padding: 0;
+    }
+    .contacto {
+        flex-direction: column;
+        padding: 48px 0;
+    }
+    .contacto div h3{
+        text-align: center;
+        margin-top: 24px;
+    }
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "ecologico"
+            "conductual"
+            "gestion"
+            "texto"
+            "intervencion"
+            "emocional"
+            "experiencias"
+    ;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .servicios{
+        flex-direction: column;
+    }
+    .filosofia{
+        padding: 180px 80px;
+    }
+    .concepto{
+        padding: 120px 80px;
+    }
+    .quienesSomos{
+        padding: 180px 80px;
+    }
+}
+
+@media screen and (max-width:570px) {
+        header nav ul{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hero{
+            text-align: center;
+            padding: 0 32px;
+        }
+        .proyectos {
+            grid-template-rows: 100px 350px 100px 350px;
+        }
+        .proyectos div p{
+            font-size: 15px;
+        }
+        .filosofia p{
+            font-size: 28px;
+            line-height: 42px
+        }
+        .concepto {
+            padding: 140px 80px;
+        }
+        .concepto div p{
+            font-size: 28px;
+            line-height: 42px
+        }
+        .quienesSomos div p{
+            font-size: 20px;
+            line-height: 30px
+        }
+}
+
+@media screen and (max-width:400px) {
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .filosofia p{
+        font-size: 24px;
+        line-height: 36px
+    }
+    .concepto div p{
+        font-size: 24px;
+        line-height: 36px
+    }
+    .quienesSomos div p{
+        font-size: 16px;
+        line-height: 26px
+    }
+}
